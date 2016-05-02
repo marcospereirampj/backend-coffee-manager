@@ -3,6 +3,7 @@ DemoApp - Friday of Knowledge
 
 Demo application for the event "Friday of Knowledge".
 
+CoffeeManager is queue manager of production of coffee.
 
 ## Initiation ##
 
