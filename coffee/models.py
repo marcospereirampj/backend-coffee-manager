@@ -27,13 +27,13 @@ class Registry(models.Model):
         @author Marcos Pereira
     """
     member = models.ForeignKey(Member, verbose_name="Member")
-    date_create = models.DateTimeField("Date of Registry", auto_now=True)
+    date_created = models.DateTimeField("Date of Registry", auto_now=True)
 
     def __str__(self):
-        return "%s - %s" % (self.member.name, self.date_create)
+        return "%s - %s" % (self.member.name, self.date_created)
 
     class Meta:
         app_label = 'coffee'
-        ordering = ['date_create', ]
+        ordering = ['date_created',]
         verbose_name = 'Registry'
         verbose_name_plural = 'Registries'
