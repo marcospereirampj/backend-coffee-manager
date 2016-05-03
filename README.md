@@ -43,6 +43,7 @@ See the presentation of the event [1].
 * djangorestframework (http://www.django-rest-framework.org/)
 * markdown (http://pythonhosted.org/Markdown/)
 * django-filter (https://github.com/carltongibson/django-filter)
+* django-cors-headers (https://github.com/ottoyiu/django-cors-headers)
 
 ## References ##
 
