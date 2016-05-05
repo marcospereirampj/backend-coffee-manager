@@ -26,7 +26,7 @@ class Registry(models.Model):
     """
         @author Marcos Pereira
     """
-    member = models.ForeignKey(Member, verbose_name="Member")
+    member = models.ForeignKey(Member, verbose_name="Member", related_name="registries")
     date_created = models.DateTimeField("Date of Registry", auto_now=True)
 
     def __str__(self):
