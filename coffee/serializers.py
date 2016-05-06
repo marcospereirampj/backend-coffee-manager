@@ -12,8 +12,14 @@ class MemberSerializer(serializers.ModelSerializer):
         fields = ('name', 'email', 'registries')
 
 
+class MemberRelatedField(serializers.RelatedField):
+    def to_representation(self, value):
+        return "%s" % (value.name)
+
+
 class RegistrySerializer(serializers.ModelSerializer):
+    member_name = MemberRelatedField(source='member', read_only=True)
 
     class Meta:
         model = Registry
-        fields = ('member', 'date_created')
+        fields = ('member', 'date_created', 'member_name')
