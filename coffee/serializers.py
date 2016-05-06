@@ -5,7 +5,7 @@ from coffee.models import Member, Registry
 
 
 class MemberSerializer(serializers.ModelSerializer):
-    registries = serializers.PrimaryKeyRelatedField(many=True, queryset=Registry.objects.all())
+    registries = serializers.PrimaryKeyRelatedField(many=True, queryset=Registry.objects.all(), required=False)
 
     class Meta:
         model = Member
@@ -17,4 +17,3 @@ class RegistrySerializer(serializers.ModelSerializer):
     class Meta:
         model = Registry
         fields = ('member', 'date_created')
-        depth = 2

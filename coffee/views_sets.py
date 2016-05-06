@@ -26,8 +26,8 @@ class RegistryViewSet(viewsets.ModelViewSet):
 class QueueView(APIView):
 
     def get(self, request, format=None):
-        registries = Registry.objects.all().values('member__name').\
-                annotate(total=Count('member')).order_by('member')
+        registries = Registry.objects.all().values('member__name', 'member__pk').\
+                annotate(total=Count('member')).order_by('total')
         return Response(registries)
 
 
