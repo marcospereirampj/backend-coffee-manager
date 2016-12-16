@@ -4,6 +4,7 @@ Coffee Manager - DemoApp - Friday of Knowledge
 CoffeeManager is queue manager of production of coffee.
 Demo application for the event "Friday of Knowledge".
 
+Front-end project: https://github.com/marcospereirampj/frontend-coffee-manager. 
 
 ## Initiation ##
 
@@ -47,5 +48,5 @@ See the presentation of the event [1].
 
 ## References ##
 
-* [1] Link to apresentation
+* [1] Link to presentation
 * [2] Link to app
