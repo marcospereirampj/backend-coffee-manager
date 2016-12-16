@@ -45,8 +45,3 @@ See the presentation of the event [1].
 * markdown (http://pythonhosted.org/Markdown/)
 * django-filter (https://github.com/carltongibson/django-filter)
 * django-cors-headers (https://github.com/ottoyiu/django-cors-headers)
-
-## References ##
-
-* [1] Link to presentation
-* [2] Link to app
